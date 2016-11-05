@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+ <head>
+ 	
+   	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+   	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   	<title>form</title>
+
+   	<!-- Bootstrap -->
+   	<link th:href="@{/resources/css/bootstrap.css}" rel="stylesheet">
+   	<link th:href="@{/resources/css/font-awesome.css}" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+   	<link th:href="@{/resources/css/styles.css}" rel="stylesheet">
+   	
+   	<!-- Angular Dependencies -->
+   	<script th:src="@{/resources/node_modules/core-js/client/shim.min.js}"></script>
+    <script th:src="@{/resources/node_modules/zone.js/dist/zone.js}"></script>
+    <script th:src="@{/resources/node_modules/reflect-metadata/Reflect.js}"></script>
+    <script th:src="@{/resources/node_modules/systemjs/dist/system.src.js}"></script>
+	
+	<!-- Angular bootstrap -->
+	<script th:src="@{/resources/systemjs.config.js}"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+   	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   	<!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   	<![endif]-->
+ 	</head>
+ 
+ 	<body>
+	 	
+	 	<div class="container"> 
+	 	 	
+	   		<div class="page-header">
+	  			<my-app>Loading...</my-app>
+			</div>
+			
+			<form action="#" th:action="@{/form}" th:object="${form}" method="post">
+			
+				<div class="hidden">
+ 					<input type="text" th:field="*{formId}" value="1" readonly>
+ 				</div>	
+ 					
+				<div class="form-group">
+					<label class="control-label" for="exampleInputEmail1">Email address</label> 
+					<input type="email" th:field="*{email}" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label" for="exampleInputPassword1">Password</label> 
+					<input type="password" th:field="*{password}" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label" for="exampleInputPassword2">Confirm Password</label> 
+					<input type="password" th:field="*{password2}" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password">
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label" for="firstName">First Name</label> 
+					<input type="text" th:field="*{firstName}" class="form-control" id="firstName" placeholder="First Name">
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label" for="lastName">Last Name</label> 
+					<input type="text" th:field="*{lastName}" class="form-control" id="lastName" placeholder="Last Name">
+				</div>
+				
+				<button type="submit" class="btn btn-default">Submit</button>
+				
+			</form>
+			
+		</div>
+
+    	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script th:src="@{/resources/js/bootstrap.js}"></script>
+  	</body>
+  
+</html>
