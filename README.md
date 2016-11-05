@@ -28,5 +28,5 @@ Following technologies are included
 3. Clean Project
 4. Run Maven Clean and Install
 5. Deploy springmvc project to Tomcat
-6. After Tomcat starts, navigate to http://localhost:8080/mvc/form
+6. After Tomcat starts, navigate to http://localhost:8080/mvc/form 
 
