@@ -28,28 +28,28 @@
                 "name": "API's",
                 "icon": "fa-globe",
                 "title": "Enhancements",
-                "body": "<p>Two enhancements have been made to the Update Subscription API call:</p><ul><li>The client order id has been added as a field that can be returned and populated based on information in the call.</li><li>The Renewal Count has also been added as a field that can bereturned.</li></ul>"
+                "body": "Two enhancements have been made to the Update Subscription API call:</p><ul><li>The client order id has been added as a field that can be returned and populated based on information in the call.</li><li>The Renewal Count has also been added as a field that can bereturned.</li></ul>"
             },
             {
                 "id": 2,
                 "name": "Customer View",
                 "icon": "fa-child",
                 "title": "Demo Date and Batch Tracking ID",
-                "body": "<p>In our last release, we added the option to key the demo date and batch tracking id on each individual demographic when entering an order. With this code release, you are now able to add/update this information in the demographic section of Customer View. Please contact your Account Manager with any questions.</p>"
+                "body": "In our last release, we added the option to key the demo date and batch tracking id on each individual demographic when entering an order. With this code release, you are now able to add/update this information in the demographic section of Customer View. Please contact your Account Manager with any questions."
             },
             {
                 "id": 3,
                 "name": "Omail",
                 "icon": "fa-child",
                 "title": "Upgraded version of WYSIWYG editor",
-                "body": "<p>Our WYSIWYG editor has now been upgraded to the most recent version of CKEditor - CKEditor 4.5.7 (revision e98277f).<br>New features include an updated interface and the addition of the Styles drop-down which allows you to easily apply customized styles and semantic values to content created in the editor.<br>The user guide can be found here <a href=\"http://docs.cksource.com/CKEditor_3.x/Users_Guide\" target=\"_blank\">CKEditor User Guide</a>.</p>"
+                "body": "Our WYSIWYG editor has now been upgraded to the most recent version of CKEditor - CKEditor 4.5.7 (revision e98277f).<br>New features include an updated interface and the addition of the Styles drop-down which allows you to easily apply customized styles and semantic values to content created in the editor.<br>The user guide can be found here <a href=\"http://docs.cksource.com/CKEditor_3.x/Users_Guide\" target=\"_blank\">CKEditor User Guide</a>."
             },
             {
                 "id": 4,
                 "name": "Reports",
                 "icon": "fa-globe",
                 "title": "Omail - Summary by Link Category",
-                "body": "<p>The Summary by Link Category report has now been enhanced to allow you to run it over user specified date ranges. Previously you could only select an entire month period. This report is an excellent way to view the success of your categorized links. Please contact the Omail team to review this functionality.</p>"
+                "body": "The Summary by Link Category report has now been enhanced to allow you to run it over user specified date ranges. Previously you could only select an entire month period. This report is an excellent way to view the success of your categorized links. Please contact the Omail team to review this functionality."
             }
         ]
     }

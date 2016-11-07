@@ -26,12 +26,9 @@ export class NewsService {
     
     private extractData(response: Response) {
         console.log("extractData");
-        
-        //let news: {} = JSON.parse(response._body);
-        //return news || { };
-        
+               
         let news = response.json();
-        return news || { };
+        return news || [];
     }
     
     private handleError(error: any): Promise<any> {
