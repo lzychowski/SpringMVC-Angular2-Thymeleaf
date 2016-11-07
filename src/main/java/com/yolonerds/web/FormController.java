@@ -38,4 +38,14 @@ public class FormController {
 		
 		return "result";
 	}
+	
+	// news view
+	
+	@GetMapping("/")
+	public String getMain(Model model) {
+ 
+		model.addAttribute("main", new WebFormModel());
+		
+		return "main";
+	}
 }
