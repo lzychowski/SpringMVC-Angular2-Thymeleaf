@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
  <head>
+ 	<base href="">
  	
    	<meta charset="utf-8">
    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,17 +16,6 @@
    	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
    	<link th:href="@{/resources/css/styles.css}" rel="stylesheet">
    	
-   	<!-- Angular Dependencies -->
-   	<script th:src="@{/resources/node_modules/core-js/client/shim.min.js}"></script>
-    <script th:src="@{/resources/node_modules/zone.js/dist/zone.js}"></script>
-    <script th:src="@{/resources/node_modules/reflect-metadata/Reflect.js}"></script>
-    <script th:src="@{/resources/node_modules/systemjs/dist/system.src.js}"></script>
-	
-	<!-- Angular bootstrap -->
-	<script th:src="@{/resources/systemjs.config.js}"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
    	<!--[if lt IE 9]>
@@ -39,7 +29,7 @@
 	 	<div class="container"> 
 	 	 	
 	   		<div class="page-header">
-	  			<my-app>Loading...</my-app>
+	  			Header
 			</div>
 			
 			<form action="#" th:action="@{/form}" th:object="${form}" method="post">

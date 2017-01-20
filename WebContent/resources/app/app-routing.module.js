@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 exports.routes = [
-    //{ path: '', redirectTo: '', pathMatch: 'full'}
     { path: '', loadChildren: 'app/news/modules/news.module#NewsModule' }
 ];
 var AppRoutingModule = (function () {

@@ -19,7 +19,7 @@ import { AppRoutingModule }   from './app-routing.module';
 })
 
 export class AppModule {
-    
+	
     constructor () {
         console.log(this.constructor.name);
     }

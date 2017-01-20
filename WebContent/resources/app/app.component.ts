@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'portal',
+  selector: 'my-app',
   template: '<router-outlet></router-outlet>'
 })
 

@@ -1,40 +1,25 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Injector } from '@angular/core';
 import { Headers, Http, Response } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { NewsRelease }   from '../models/news-release';
+import { NewsRelease } from '../models/news-release';
+import { BaseService } from '../../shared/services/base.service';
 
 @Injectable()
-export class NewsService {
+export class NewsService extends BaseService<NewsRelease> {
     
-    private headers = new Headers({'Content-Type': 'application/json'});
     private url = 'resources/data/news.json';
     
-    constructor (private http: Http){
+    constructor (http: Http, injector: Injector){
+        super(injector);
         console.log(this.constructor.name);
     }
     
     getNews(): Promise<NewsRelease[]> {
         console.log("getNews");
         
-        return this.http.get(this.url)
-                        .toPromise()
-                        .then(this.extractData)
-                        .catch(this.handleError);
+        return this.getMany(this.url);
     }
-    
-    private extractData(response: Response) {
-        console.log("extractData");
-               
-        let news = response.json();
-        return news || [];
-    }
-    
-    private handleError(error: any): Promise<any> {
-        console.error("handleError", error);
-        
-        return Promise.reject(error.message || error);
-    }
-    
+
 }

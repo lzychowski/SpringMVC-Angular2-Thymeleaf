@@ -16,7 +16,7 @@ public class FormController {
 	private FormService service;
 	
 	public FormController(){
-		service = new FormService();
+		this.service = new FormService();
 	}
  	
 	// send html form to the browser
